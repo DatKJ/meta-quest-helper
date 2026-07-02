@@ -1,108 +1,106 @@
-# PCVR
+# PCVR、串流与延迟排查
 
-用于回答 Quest Link、Air Link、PCVR 硬件、路由器摆位、卡顿、黑屏和 SteamVR 问题。
+## 先确认
 
-## Choose A Path
+- PC 显卡、CPU、内存。
+- 是否使用笔记本，是否独显直连。
+- 路由器型号、Wi-Fi 5/6/6E、Quest 与路由器距离。
+- PC 到路由器是有线还是 Wi-Fi。
+- 使用 Quest Link、Air Link、Steam Link 还是 Virtual Desktop。
+- 游戏来自 Meta PC、SteamVR 还是其他平台。
+- 问题类型：卡顿、延迟、马赛克、黑屏、SteamVR 报错、USB 断连、手柄/追踪抖动。
 
-- 有线 Quest Link：稳定，适合第一次排查 PCVR 基础问题。
-- Air Link：官方无线方案，适合已有较好家庭 Wi-Fi 的用户。
-- 其他串流应用：适合进阶调参用户，涉及价格和兼容性时先核实当前信息。
+## 方案选择
 
-## PC Requirements
+无线串流软件优先推荐 Steam Link：它免费、接入简单，对大多数只想玩 SteamVR 的 Quest 用户已经够用。Virtual Desktop 更适合愿意付费、追求更多画质/码率/编码细调选项，或 Steam Link/Air Link 体验不理想的进阶用户。
 
-先确认：
+### 有线 Quest Link
 
-- GPU 型号和显存。
-- CPU、内存、系统版本。
-- 显卡驱动版本。
-- 游戏平台和目标游戏。
-- 使用有线还是无线。
-- 头显刷新率和渲染分辨率。
+适合：想要稳定、路由器一般、能接受线缆。
 
-## Wireless Checklist
+注意：
 
-- PC 用网线连接路由器。
-- Quest 靠近路由器或专用 AP。
-- 优先使用 5 GHz 或 6 GHz Wi-Fi。
-- 减少同频干扰和隔墙。
-- 不把下载、网盘同步、直播推流和 PCVR 同时跑满。
+- 使用支持数据传输的 USB 3 线。
+- 测试 Link 带宽。
+- 笔记本确认使用独显。
+- 换 USB 口时优先试主板后置 USB 3 口，避免前置口、扩展坞和只充电线。
+- 不要边充电边依赖劣质线高负载工作。
 
-## Stutter Troubleshooting
+### Air Link
 
-按顺序降低变量：
+适合：想用 Meta 官方无线方案，PC 和路由器条件较好。
 
-1. 先用有线 Link 测试 PC 性能是否足够。
-2. 降低头显刷新率和渲染分辨率。
-3. 降低游戏画质和 SteamVR 分辨率。
-4. 关闭后台录屏、浏览器、同步工具和性能叠加层。
-5. 更新显卡驱动、Quest 系统和 PC 端应用。
-6. 无线时检查路由器摆位、频段、信道和 PC 有线连接。
+建议：
 
-## Black Screen Or No Audio
+- PC 有线连接路由器。
+- Quest 使用 5 GHz/6 GHz。
+- 路由器与 Quest 同房间。
+- 从较低码率开始，再逐步提高。
 
-- 重启 Quest 和 PC。
-- 换 USB 口或线材。
-- 关闭再打开 Quest Link。
-- 检查 Windows 默认音频设备。
-- 检查显卡驱动和游戏平台运行状态。
-- 只保留一个 VR 运行时做测试，避免多个运行时互相抢占。
+### Steam Link
 
-## Wired Link Freezes Or Disconnects
+适合：主要玩 SteamVR，想简单接入 Steam 生态，希望先用免费方案完成无线 PCVR 的大多数用户。
 
-典型现象：有线 Link 运行一段时间后黑屏、Link 画面冻结但音频和控制仍工作、约 30 分钟左右断连、断开后 PC 和 Quest 互相识别不到。
+建议：
 
-先做：
+- 无线 PCVR 首选先试 Steam Link。
+- 先确认 SteamVR 能正常运行，再调串流质量。
+- 如果只是玩常见 SteamVR 游戏，Steam Link 通常已经够用，不必一开始就购买 Virtual Desktop。
+- 若遇到画质、延迟、控制器映射或兼容性问题，再与 Air Link 或 Virtual Desktop 对比。
 
-1. 用 Meta PC app 的 USB 测试确认线材和接口速度。
-2. 换主板后置 USB 口，避免前置扩展坞和不稳定转接头。
-3. 关闭 PC 的 USB 选择性暂停和设备管理器里的省电选项。
-4. 更新或回退显卡驱动时，一次只改一个变量并记录版本。
-5. 结束 Meta/Horizon/Oculus 相关进程后再重新打开 PC app；必要时重启 PC 和 Quest。
-6. SteamVR 同时异常时，先单独测试 Quest Link 桌面，再测试 SteamVR，最后测试具体游戏。
+### Virtual Desktop
 
-判断方向：
+适合：愿意购买第三方软件并细调码率、编码、画质的用户，或 Steam Link/Air Link 无法满足需求的进阶用户。
 
-- 只有高负载游戏会冻结：优先降低分辨率、刷新率、游戏画质和后台占用。
-- USB 测试不稳定：优先换线、换口、去掉延长线。
-- Air Link 也失败：检查 PC app、账号状态、同一局域网发现和防火墙。
+提醒：购买前先试 Steam Link；再核实 Virtual Desktop 当前兼容性、账号地区、商店可用性、价格和退款规则。
 
-## SteamVR And Runtime Conflicts
+## 网络布局
 
-适合：SteamVR 不识别头显、Meta PC app 正常但 SteamVR 黑屏、切换游戏后运行时互相抢占。
+理想布局：
 
-1. 先确认 Quest Link 或 Air Link 本身可进入 PC 桌面。
-2. 再启动 SteamVR，避免多个 VR 运行时同时抢占。
-3. 更新 SteamVR、Meta PC app、显卡驱动和 Windows。
-4. 游戏内运行时选项优先保持默认；改动 OpenXR/SteamVR 设置时逐项记录。
-5. 如果某个游戏单独失败，先用一个轻量 VR app 做对照测试。
+```text
+PC --有线--> 路由器 --5GHz/6GHz--> Quest
+```
 
-## Wireless Latency Spikes
+不理想布局：
 
-适合：Steam Link、Air Link 或其他无线串流都出现网络延迟尖峰，平时低于 10 ms，偶尔跳到几十毫秒以上。
+```text
+PC --Wi-Fi--> 路由器 --Wi-Fi--> Quest
+```
 
-1. PC 必须用网线连接路由器。
-2. Quest 尽量连接同一个 5 GHz 或 6 GHz SSID，靠近路由器测试。
-3. 关闭路由器智能合并频段做对比。
-4. 避免其他设备同时下载、同步、投屏或占满上行。
-5. 更换 Wi-Fi 信道或换到干扰更少的位置。
-6. 如果不同串流应用都卡，优先排查路由器、信道、距离和同频干扰，而不是只调某个 app。
+电脑和 Quest 都走无线时，延迟和抖动会明显增加。
 
-## 2D PC Gaming And Gaze Cursor
+## 卡顿定位
 
-适合：用 Quest 当大屏玩 2D PC 游戏时，gaze cursor 抢焦点、手柄/游戏手柄输入被切回键鼠布局。
+区分四类问题：
 
-1. 先确认目标是 2D 大屏游戏，不是 VR 游戏。
-2. 优先在 PC 端确认游戏手柄输入稳定。
-3. 在 Quest 端关闭不需要的手势输入或凝视选择选项，具体入口以当前系统为准。
-4. 尝试固定窗口位置，减少头部准星停在游戏 UI 上。
-5. 如果是某个游戏独有问题，检查游戏内控制器模式和窗口焦点。
+- PC 性能不足：游戏本身掉帧，降低游戏画质或分辨率。
+- 编码压力：显卡编码器满载，降低码率/刷新率。
+- Wi-Fi 抖动：画面马赛克、延迟尖峰，优化路由器和频段。
+- 平台链路问题：SteamVR/Meta Link 软件异常，重启服务或更新驱动。
 
-## Sim Racing And Heavy PCVR Tuning
+排查顺序：
 
-适合：Assetto Corsa、DCS、ETS2、赛车/飞行模拟等高负载场景。
+1. 用本地显示器确认 PC 游戏不掉帧。
+2. 降低 SteamVR supersampling/渲染分辨率、串流码率和刷新率。
+3. PC 改有线。
+4. Quest 靠近路由器。
+5. SteamVR 异常时按 SteamVR -> 头显 -> PC 的顺序重启。
+6. 切换 Air Link/Steam Link/Virtual Desktop 对比。
+7. 更新显卡驱动、Meta Quest Link、SteamVR 和头显固件。
 
-- 优先保证稳定帧率，再追求最高分辨率。
-- 先用中等分辨率、较低游戏画质和默认码率建立基线。
-- 外部画面糊时，逐步提高渲染分辨率；车内仪表糊时，优先调字体、抗锯齿和清晰度。
-- ASW/重投影开关要按游戏单独测试，不要一次改太多项。
-- 记录 GPU 占用、显存、CPU 帧时间和网络/USB 指标，避免凭感觉调参。
+## SteamVR 与黑屏
+
+- SteamVR 报错或识别异常：先重启 SteamVR，再重启头显，最后重启 PC；避免一次改很多设置。
+- 黑屏：检查线缆/无线连接、GPU 驱动、Meta Quest Link、SteamVR、头显固件和笔记本独显输出。
+- 追踪抖动：排查光线、反光面、摄像头清洁、USB 带宽和 Wi-Fi 抖动。
+- 性能差：先降 supersampling/渲染分辨率，再降游戏画质、刷新率和码率。
+- Link 线断连：换 USB 3 口、换线、关闭省电策略，确认线材不是只支持充电。
+
+## 常见建议
+
+- 不要把“能上外网”和“PCVR 不卡”混为一谈。PCVR 主要看局域网质量和 PC 性能。
+- 串流路由器可以不负责全屋上网，但应给 PC 和 Quest 提供稳定局域网。
+- 高码率不是越高越好；稳定帧率和低抖动更重要。
+- 90 Hz/120 Hz 对 PC 和网络要求更高，新手先从 72/80/90 Hz 稳定开始。
+- VR 开发或调试时要频繁真机测试；桌面预览无法可靠暴露晕动、交互距离、手柄姿态和性能掉帧问题。

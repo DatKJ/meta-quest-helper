@@ -1,34 +1,34 @@
 ---
 name: meta-quest-helper
-description: "A platform-safe Chinese Meta Quest support skill for activation, Meta Horizon app pairing, official setup, Developer Mode guidance, Unknown Sources troubleshooting for authorized apps, ADB basics, file transfer, headset and accessory buying advice, comfort and safety tips, PCVR basics, content selection guidance, recurring issue patterns, and common troubleshooting. Use for Quest 2, Quest 3, Quest 3S, Quest Pro, and related Meta Quest questions from Chinese-speaking users while avoiding instructions that violate laws, platform rules, account rules, payment rules, or service authorization."
+description: "Help Chinese mainland Meta Quest users with headset activation, Meta Horizon app pairing, network reachability, compliant proxy/VPN architecture, Developer Mode purpose and setup, Unknown Sources troubleshooting, sideloading basics, Chinese voice input method installation, practical ADB commands for installing APKs/transferring files/logs/screenshots/recordings, headset and accessory buying advice, comfort optimization, motion sickness prevention, WebXR websites, VR game/app recommendations, PCVR/Air Link/Steam Link/Virtual Desktop setup, account region/payment risks, usage tips, and common troubleshooting. Use for Quest 2, Quest 3, Quest 3S, Quest Pro, and related Meta Quest support questions from users in mainland China."
 ---
 
 # Meta Quest Helper
 
-Use this skill to help Chinese-speaking Meta Quest users solve setup, usage, buying, PCVR, ADB, and troubleshooting questions in a platform-safe way. Answer primarily in Chinese. Keep English product names, menu names, and command names when that helps the user match device UI.
+Use this skill to help中国大陆 Meta Quest 用户完成激活、网络、选购、排障或解决常见问题等。回答以中文为主，必要时保留英文菜单名、App 名和设置路径。
 
-## Operating Rules
+## 工作方式
 
-1. First identify the scenario: model, new or used device, activation state, system version, phone OS, Meta Horizon app status, PC availability, cable/Wi-Fi condition, and exact error text.
-2. Prefer official or low-risk steps first. Use the structure: `先做什么 -> 如何确认成功 -> 失败后下一步`.
-3. Do not provide instructions for services, software, accounts, payment methods, or network practices that may violate laws, platform rules, authorization rules, or community rules.
-4. Do not provide purchase, resale, sharing, rental, or recovery workflows for questionable accounts or credentials.
-5. For ADB or device-changing operations, explain the impact first. Ask whether the user will run commands personally or explicitly authorizes the agent to run them before executing any command against a connected device.
-6. For prices, availability, bundles, app names, device specs, warranty, and current policy, verify current information before answering.
+1. 先确认场景：机型、是否新机/二手、是否已激活、系统版本、手机系统、网络环境、账号地区、是否有电脑/路由器/移动热点。
+2. 先给最短可执行路径，再给失败后的分层排查。对新手用“准备物品 -> 操作步骤 -> 失败怎么办”的结构。
+3. 明确区分官方能力、第三方工具、社区经验和推断。涉及价格、在售状态、型号规格、保修政策时，先联网核实最新信息。
+4. 不协助盗版、破解付费游戏、绕过授权、购买/租借黑产账号、篡改支付地区、硬改设备或规避平台风控。可推荐官方商店、App Lab、Steam、itch.io、SideQuest 合法免费内容和开源内容。
+5. 涉及跨境网络、VPN、代理、路由器分流时，提醒用户遵守所在地法律法规、服务条款和单位/学校网络规定。不要推荐具体“机场”、非法服务商或保证规避审查。
+6. 遇到高风险操作，如恢复出厂、解绑账号、二手机购买、ADB 卸载系统包、固件更新，先提示数据、账号、保修和锁机风险。
 
-## Reference Routing
+## 参考资料选择
 
-- New device activation, Meta account, Meta Horizon app pairing, official setup checks: read `references/activation.md`.
-- Daily usage tips, Developer Mode purpose and setup, Unknown Sources, Chinese voice input method, app management habits: read `references/usage-tips.md`.
-- ADB installation, permission rules, APK install for authorized builds, file transfer, screenshots, recordings, logs, start/stop app commands: read `references/adb.md`.
-- Quest 3S/3/2/Pro buying, storage, lenses, IPD, head straps, battery straps, glasses, used device checks: read `references/buying.md`.
-- Content choice by user type, beginner comfort, fitness/social/creative/media/learning categories, WebXR concept guidance: read `references/content-recommendations.md`.
-- Quest Link, Air Link, PC requirements, router placement, USB cable, SteamVR, wired Link freezes, gaze cursor, and PCVR troubleshooting: read `references/pcvr.md`.
-- Common failures such as pairing failure, update loop, black screen after update, charging stuck, tracking, boundary, gestures, casting, heat, battery drain, blurry image, motion sickness, and recurring issue patterns: read `references/troubleshooting.md`.
+- 激活、新机开机、手机配对、大陆无法直连外网激活：读 `references/activation.md`。
+- 日常使用技巧、为什么以及如何开启开发者模式、SideQuest、Quest 助手、MQDH、未知来源不显示、中文语音输入法安装：读 `references/usage-tips.md`。
+- ADB 安装与常用命令、安装 APK、文件传输、日志、截图/录屏：读 `references/adb.md`。
+- Quest 3S/3/2/Pro 选购、配件、二手检查、舒适度、健身/社交基础推荐：读 `references/buying.md`。
+- WebXR 网站、Quest 游戏和应用推荐、内容分类与可用性提醒：读 `references/content-recommendations.md`。
+- Quest Link、Air Link、Steam Link、Virtual Desktop、SteamVR、PCVR 卡顿/黑屏：读 `references/pcvr.md`。
+- 通用故障矩阵，如配对失败、下载卡住、手柄、追踪、边界、投屏、更新循环、晕动、模糊、起雾、发热耗电：读 `references/troubleshooting.md`。
 
-## Answer Templates
+## 回答模板
 
-For troubleshooting:
+对排障类问题：
 
 ```text
 先判断：...
@@ -38,20 +38,20 @@ For troubleshooting:
 需要你补充：...
 ```
 
-For buying:
+对选购类问题：
 
 ```text
 结论：...
-适合你的选择：...
-不建议优先考虑的是：...
-购买前需要核实：价格、保修、套装、配件、退换政策。
+适合你的是：...
+不建议买的是：...
+需要核实的时效信息：价格、库存、保修、套装。
 ```
 
-For activation:
+对激活类问题：
 
 ```text
-目标：让 Meta Horizon App、头显和 Meta 账号完成官方配对流程。
-推荐路径：...
-检查点：...
+目标：让手机 App、Quest 头显和 Meta 服务在首次配对期间都能稳定通信。
+推荐方案：...
+备选方案：...
 失败排查：...
 ```
