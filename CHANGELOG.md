@@ -1,22 +1,18 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## v1.1.0 - 2026-07-02
 
-The format is based on Keep a Changelog, and this project uses semantic versioning.
+### Changed
 
-## [1.0.0] - 2026-06-11
+- 用平台友好的纯净版内容覆盖原版 Skill。
+- 统一 Skill 名称为 `meta-quest-helper`。
+- 补充常见 Quest 问题模式、PCVR 排障、生产力选购、内容趋势和官方更新失败处理。
+- 移除容易触发平台审核风险的操作性内容和来源痕迹。
+
+## 1.0.0 - 2026-07-02
 
 ### Added
 
-- Initial Meta Quest Helper Agent Skill.
-- Activation guidance for Chinese mainland Quest users, including Meta account setup, Meta Horizon App pairing, referral reward caveats, and multiple activation network approaches.
-- Usage tips covering Developer Mode, Unknown Sources, SideQuest, Quest Assistant, MQDH, Quest/Android proxy clients, and Chinese voice input methods.
-- ADB guide covering setup, authorization, APK installation, file transfer, screenshots, recordings, logs, Wi-Fi limited-status fixes, and app launch/stop commands.
-- Buying advice for Quest 3S, Quest 3, second-hand Quest 2/Pro, accessories, comfort, head strap choices, and first-experience tips.
-- WebXR website, Quest game/app, fitness, social, productivity, video, and PCVR recommendations.
-- PCVR guidance for Quest Link, Air Link, Steam Link, Virtual Desktop, SteamVR, latency, black screen, and stutter troubleshooting.
-- Troubleshooting matrix for pairing, store loading, downloads, controllers, tracking, boundary, casting, update loops, motion sickness, fogging, heat, and battery drain.
-
-### Security
-
-- Added refusal and safety boundaries for piracy, cracked games, DRM bypass, black-market accounts, payment-region manipulation, and unsafe ADB operations.
+- 发布 Meta Quest Helper。
+- 覆盖官方激活、配对、日常使用、ADB、选购、PCVR、内容选择和排障能力。
+- 采用平台友好的合规边界，优先提供官方流程和低风险排障步骤。
