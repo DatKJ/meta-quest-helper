@@ -25,11 +25,11 @@ WebXR 是浏览器里的沉浸式 XR 体验。Quest 用户通常可用 Meta Ques
 
 ## 常用 WebXR 网站
 
-- `https://immersive-web.github.io/webxr-samples/`：WebXR 官方示例集合，适合验证浏览器、手柄、手势、AR/VR 基础能力。
-- `https://moonrider.xyz/`：浏览器节奏游戏，适合快速体验 WebXR 游戏；进入后选择 VR 模式。
-- `https://aframe.io/examples/`：A-Frame 示例集合，适合开发者和想看 360 图片、视频、手势、模型展示的人。
-- `https://heyvr.io/`：浏览器 VR 游戏/发布平台，适合寻找轻量 WebXR 小游戏；可用性和内容质量需现场验证。
-- `https://molecularwebxr.org/`：分子和科学教育类 WebXR，适合教育、演示和多人讨论场景；网络和设备性能需验证。
+- WebXR Samples：搜索关键词：`WebXR Samples immersive web`。WebXR 官方示例集合，适合验证浏览器、手柄、手势、AR/VR 基础能力。
+- Moon Rider：搜索关键词：`Moon Rider WebXR`。浏览器节奏游戏，适合快速体验 WebXR 游戏；进入后选择 VR 模式。
+- A-Frame examples：搜索关键词：`A-Frame examples WebXR`。A-Frame 示例集合，适合开发者和想看 360 图片、视频、手势、模型展示的人。
+- heyVR：搜索关键词：`heyVR WebXR`。浏览器 VR 游戏/发布平台，适合寻找轻量 WebXR 小游戏；可用性和内容质量需现场验证。
+- Molecular WebXR：搜索关键词：`Molecular WebXR`。分子和科学教育类 WebXR，适合教育、演示和多人讨论场景；网络和设备性能需验证。
 
 回答时提醒：WebXR 网站通常不需要安装，但依赖浏览器兼容性、网络、站点维护状态和手柄/手势支持。体验不稳定时先换官方 WebXR Samples 验证基础能力。
 

@@ -22,8 +22,8 @@
 
 官方入口：
 
-- Meta Quest 设备设置和开发者模式：`https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/`
-- Meta Horizon Developer Dashboard：`https://developers.meta.com/horizon/manage/`
+- Meta Quest 设备设置和开发者模式：搜索关键词：`Meta Quest Developer Mode official documentation`
+- Meta Horizon Developer Dashboard：搜索关键词：`Meta Horizon Developer Dashboard`
 
 核心流程：
 

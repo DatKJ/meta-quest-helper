@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on Keep a Changelog, and this project uses semantic versioning.
 
+## [v1.1.2] - 2026-07-03
+
+### Changed
+
+- 将文档中的网络链接替换为搜索关键词或占位说明。
+- 保留官方资料、WebXR 项目和 ADB 操作说明的用途描述，但不直接提供可点击或可复制访问的地址。
+
 ## [1.1.0] - 2026-07-02
 
 ### Changed

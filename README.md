@@ -1,6 +1,6 @@
 # Meta Quest Helper
 
-当前版本：`1.1.0`
+当前版本：`v1.1.2`
 
 Meta Quest Helper 是一个面向中国大陆 Meta Quest 用户的 Agent Skill，用于帮助处理新机激活、首次配对、日常使用、ADB 操作、选购建议、PCVR、内容推荐和常见问题排障。
 
